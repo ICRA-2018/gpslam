@@ -1,0 +1,16 @@
+name: gp-slam
+
+base:
+  ubuntu: 16.04
+  cmake_update: 3.13.4
+
+build: cmake
+
+apt:
+  - libboost-all-dev
+
+source:
+  - name: gtsam
+    repo: https://bitbucket.org/gtborg/gtsam.git
+    build: cmake
+
